@@ -1,0 +1,21 @@
+{
+  "name": "alexdin/yii2-rest-log",
+  "description": "extension for rest api file logger class",
+  "keywords": ["yii2", "log", "rest", "api", "restfuil"],
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Alexey Dinaychuk",
+      "email": "mralexdin@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "yiisoft/yii2": "~2.0.4"
+  },
+  "autoload": {
+    "psr-4": { "alexdin\\restlog\\": "" }
+  },
+  "extra": {
+  }
+}
