@@ -17,9 +17,19 @@ return [
             'targets' => [
                 [
                     'class' => 'alexdin\restlog\RestFileTarget',
+                    'logVars' => ['PATCH','_SERVER'],
                     //'logFile' => '@runtime/logs/app.log',
                 ],
             ],
         ],
+        'request' => [
+            'class' => '\yii\web\Request',
+            'enableCookieValidation' => false,
+            'enableCsrfValidation' => false,
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],
+        ],
     ],
+    'defaultRoute' => 'site/index',
 ];
